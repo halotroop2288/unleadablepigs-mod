@@ -1,29 +1,32 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
-  "version": "${version}",
+  "id": "unleadablepigs",
+  "version": "1.0.0",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Unleadable Pigs",
+  "description": "This mod is free software. It comes without any warranty, to the extent permitted by applicable law.",
   "authors": [
-    "Me!"
+    "Bruh88",
+    "halotroop2288"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://twitter.com/ha1otroop2288",
+    "sources": "https://github.com/halotroop2288"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "WTFPL",
+  "icon": "assets/unleadablepigs/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "com.github.halotroop2288.unleadablepigs.UnleadablePigMod"
+    ],
+    "client": [
+      "com.github.halotroop2288.unleadablepigs.UnleadablePigsClient"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
   ],
 
   "depends": {
@@ -32,6 +35,6 @@
     "minecraft": "1.15.x"
   },
   "suggests": {
-    "flamingo": "*"
+    "exfeatures": "*"
   }
 }
